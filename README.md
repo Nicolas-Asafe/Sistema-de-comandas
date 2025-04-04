@@ -1,15 +1,17 @@
 <h1>Como funciona?</h1>
-<p>Essa API consegue criar, listar, deletar, juntar, adicionar produtos em comandas. Aqui está um exemplo em JSON de uma comanda:</p>
+<p>Essa API consegue criar, listar, deletar comandas, juntar comandas, adicionar produtos em comandas, deletar produtos e editar nome de produtos. Aqui está um exemplo em JSON de uma comanda:</p>
 
 ```
 {
-  NumberOfCommand:1
+  NumberOfCommand:1,
   Products:[
     {
         NameProduct:"Tênis da Nike",
-        Price:245.21
+        Price:245.21,
+        id:1
     }
   ]
+  EndPrice:245.21
 }
 ```
 
@@ -25,7 +27,8 @@
   Products:[
     {
         NameProduct:"Tênis da Nike",
-        Price:245.21
+        Price:245.21,
+        id:1
     }
   ],
   EndPrice:245.21
@@ -36,6 +39,7 @@
     {
         NameProduct:"Roupa da Gucci",
         Price:542.12
+       id:2
     }
   ],
     EndPrice:542.12
@@ -46,6 +50,7 @@
     {
         NameProduct:"Boné da lacoste",
         Price:302.10
+        id:3
     }
   ],
   EndPrice:302.10
